@@ -1,6 +1,7 @@
+- provide(:title, "about")
 html
   head
-    title About | Ruby on Rails Tutorial Sample App
+    title = "#{yield(:title)} | Ruby on Rails Tutorial Sample App"
 
   body
     h1 About

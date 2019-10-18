@@ -1,6 +1,7 @@
+- provide(:title, "Help")
 html
   head
-    title Help | Ruby on Rails Tutorial Sample App
+    title = "#{yield(:title)} | Ruby on Rails Tutorial Sample App"
 
   body
     h1 Help
