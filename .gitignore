@@ -18,6 +18,8 @@
 !/tmp/.keep
 
 /.idea
+/.generators
+/.rakeTasks
 
 /node_modules
 /yarn-error.log
