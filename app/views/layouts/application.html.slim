@@ -1,12 +1,26 @@
 doctype html
 html
   head
-    title = "#{yield(:title)} | Ruby on Rails Tutorial Sample App"
+    title = full_title(yield(:title))
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all',
       'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application',
       'data-turbolinks-track': 'reload'
 
+    /<!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+      <![endif]-->
+
   body
+    header class="navbar navbar-fixed-top navbar-inverse"
+      div class="container"
+        = link_to "sample app", '#', id: "logo"
+        nav
+          ul class="nav navbar-nav navbar-right"
+            li  = link_to "Home",   '#'
+            li  = link_to "Help",   '#'
+            li  = link_to "Log in", '#'
+
     = yield
