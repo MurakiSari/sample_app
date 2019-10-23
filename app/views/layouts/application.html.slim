@@ -11,14 +11,6 @@ html
 
   body
     = render 'layouts/header'
-    header class="navbar navbar-fixed-top navbar-inverse"
-      div class="container"
-        = link_to "sample app", '#', id: "logo"
-        nav
-          ul class="nav navbar-nav navbar-right"
-            li: a<> href="#" Home
-            li: a<> href="#" Help
-            li: a<> href="#" Log in
 
     div class="container"
       = yield
