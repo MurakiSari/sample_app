@@ -12,6 +12,7 @@ gem 'slim-rails'
 gem 'bootstrap-sass', '3.3.7'
 gem 'pre-commit'
 gem 'rubocop'
+gem 'bcrypt',         '3.1.12'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
