@@ -1,2 +1,17 @@
-h1 Sessions#new
-p Find me in app/views/sessions/new.html.slim
+- provide(:title, "Log in")
+h1 Log in
+
+.row
+  .col-md-6.col-md-offset-3
+    =form_with(scope: :session, url: login_path, local: true) do |f|
+
+      = f.label :email
+      = f.email_field :email, class: 'form-control'
+
+      = f.label :password
+      = f.password_field :password, class: 'form-control'
+
+      = f.submit "Log in", class: "btn btn-primary"
+
+    p New user?
+    = link_to "Sign up now!", signup_path
