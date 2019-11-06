@@ -1,14 +1,13 @@
 footer class="footer"
   small
     | The
-    a<> href ="https://railstutorial.jp/" Ruby on Rails Tutorial
+    = link_to " Ruby on Rails Tutorial ", 'https://railstutorial.jp/'
     | by
-    a<> href = "http://www.michaelhartl.com/" Michael Hartl
+    = link_to " Michael Hartl ", 'http://www.michaelhartl.com/'
 
   nav
     ul
       li = link_to "About", about_path
       li = link_to "Contact", contact_path
       li
-        a href="http://news.railstutorial.org/"
-        | News
+        = link_to "News", 'http://news.railstutorial.org/'
