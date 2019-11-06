@@ -44,6 +44,15 @@ Layout/SpaceInsideArrayLiteralBrackets:
 
 Style/ExpandPathArguments:
     Enabled: false
+
+Style/ClassMethods:
+  Enabled: false
+
+Layout/AlignHash:
+  Enabled: false
+
+Style/MutableConstant:
+  Enabled: false
     
 #最後に新たな行を必要とする
 TrailingBlankLines:
