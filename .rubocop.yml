@@ -56,6 +56,9 @@ Style/MutableConstant:
 
 Style/IfUnlessModifier:
   Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
     
 #最後に新たな行を必要とする
 TrailingBlankLines:
@@ -64,9 +67,6 @@ TrailingBlankLines:
 # condition 内の処理が 4 行以上の時にチェックする
 GuardClause:
   MinBodyLength: 4
-
-Metrics/AbcSize:
-  Max: 20
 
 AllCops:
   Exclude:
