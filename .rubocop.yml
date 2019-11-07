@@ -53,10 +53,17 @@ Layout/AlignHash:
 
 Style/MutableConstant:
   Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
     
 #最後に新たな行を必要とする
 TrailingBlankLines:
   EnforcedStyle: final_newline
+
+# condition 内の処理が 4 行以上の時にチェックする
+GuardClause:
+  MinBodyLength: 4
 
 AllCops:
   Exclude:
