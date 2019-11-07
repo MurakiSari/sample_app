@@ -57,9 +57,12 @@ Style/MutableConstant:
 Style/IfUnlessModifier:
   Enabled: false
 
+Style/PredicateName:
+  Enabled: false
+
 Metrics/AbcSize:
   Enabled: false
-    
+
 #最後に新たな行を必要とする
 TrailingBlankLines:
   EnforcedStyle: final_newline
