@@ -65,6 +65,9 @@ TrailingBlankLines:
 GuardClause:
   MinBodyLength: 4
 
+Metrics/AbcSize:
+  Max: 20
+
 AllCops:
   Exclude:
     - db/schema.rb
