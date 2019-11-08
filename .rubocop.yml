@@ -44,10 +44,32 @@ Layout/SpaceInsideArrayLiteralBrackets:
 
 Style/ExpandPathArguments:
     Enabled: false
-    
+
+Style/ClassMethods:
+  Enabled: false
+
+Layout/AlignHash:
+  Enabled: false
+
+Style/MutableConstant:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/PredicateName:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
 #最後に新たな行を必要とする
 TrailingBlankLines:
   EnforcedStyle: final_newline
+
+# condition 内の処理が 4 行以上の時にチェックする
+GuardClause:
+  MinBodyLength: 4
 
 AllCops:
   Exclude:
