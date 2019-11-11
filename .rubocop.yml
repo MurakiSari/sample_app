@@ -63,6 +63,9 @@ Style/PredicateName:
 Metrics/AbcSize:
   Enabled: false
 
+Style/ColonMethodCall:
+  Enabled: false
+
 #最後に新たな行を必要とする
 TrailingBlankLines:
   EnforcedStyle: final_newline
