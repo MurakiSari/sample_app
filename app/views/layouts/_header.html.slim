@@ -6,7 +6,7 @@ header.navbar.navbar-fixed-top.navbar-inverse
         li = link_to "Home",   root_path
         li = link_to "Help",   help_path
         - if logged_in?
-          li = link_to "Users", '#'
+          li = link_to "Users", users_path
           li.dropdown
             = link_to "Account", '#', class: "dropdown-toggle", data: { toggle: "dropdown" }
             b.caret
