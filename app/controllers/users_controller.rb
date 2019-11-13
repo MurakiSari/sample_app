@@ -5,10 +5,11 @@ class UsersController < ApplicationController
   before_action :set_user, only: %i(show edit update)
 
   def index
-    @users = User.paginate(page: params[:page])
+    @users = User.where(activated: true).paginate(page: params[:page])
   end
 
   def show
+    redirect_to root_url and return unless @user.activated?
   end
 
   def new
