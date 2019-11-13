@@ -74,6 +74,10 @@ TrailingBlankLines:
 GuardClause:
   MinBodyLength: 4
 
+#１つのメソッドが１５行以上の時にチェックする
+Metrics/MethodLength:
+  Max: 15
+
 AllCops:
   Exclude:
     - db/schema.rb
