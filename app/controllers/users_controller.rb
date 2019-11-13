@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    redirect_to root_url and return unless @user.activated?
+    redirect_to root_url unless @user.activated?
   end
 
   def new
