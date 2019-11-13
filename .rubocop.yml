@@ -66,6 +66,9 @@ Metrics/AbcSize:
 Style/ColonMethodCall:
   Enabled: false
 
+Metrics/BlockLength:
+  Enabled: false
+
 #最後に新たな行を必要とする
 TrailingBlankLines:
   EnforcedStyle: final_newline
@@ -73,6 +76,10 @@ TrailingBlankLines:
 # condition 内の処理が 4 行以上の時にチェックする
 GuardClause:
   MinBodyLength: 4
+
+#１つのメソッドが１５行以上の時にチェックする
+Metrics/MethodLength:
+  Max: 15
 
 AllCops:
   Exclude:
