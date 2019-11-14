@@ -3,7 +3,7 @@ class PasswordResetsController < ApplicationController
   end
 
   def create
-    @user = User.find_by(email: params[:password_reset][:email].downcase)
+    @user = User.find_by(email: session_params[:email].downcase)
     if @user
       @user.create_reset_digest
       @user.send_password_reset_email
@@ -16,5 +16,11 @@ class PasswordResetsController < ApplicationController
   end
 
   def edit
+  end
+
+  private
+
+  def session_params
+    params.require(:password_reset).permit(:email)
   end
 end
