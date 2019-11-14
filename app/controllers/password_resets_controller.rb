@@ -18,7 +18,24 @@ class PasswordResetsController < ApplicationController
   def edit
   end
 
+  def update
+    if user_params[:password].empty?
+      @user.errors.add(:password, :blank)
+      render 'edit'
+    elsif @user.update(user_params)
+      log_in @user
+      flash[:success] = "Password has been reset."
+      redirect_to @user
+    else
+      render 'edit'
+    end
+  end
+
   private
+
+  def user_params
+    params.require(:user).permit(:password, :password_confirmation)
+  end
 
   def session_params
     params.require(:password_reset).permit(:email)
