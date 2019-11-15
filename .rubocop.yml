@@ -69,6 +69,9 @@ Style/ColonMethodCall:
 Metrics/BlockLength:
   Enabled: false
 
+Lint/AmbiguousRegexpLiteral:
+  Enabled: false
+
 #最後に新たな行を必要とする
 TrailingBlankLines:
   EnforcedStyle: final_newline
