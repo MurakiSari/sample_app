@@ -3,3 +3,5 @@
   .field
     = f.text_area :content, placeholder: "Compose new micropost..."
   = f.submit "Post", class: "btn btn-primary"
+  .picture
+    = f.file_field :picture
