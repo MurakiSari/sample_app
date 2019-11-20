@@ -26,8 +26,7 @@ class MicropostsController < ApplicationController
   end
 
   def set_micropost
-    @micropost = current_user.microposts.find_by(id: params[:id])
-
+    @micropost = current_user.microposts.find_by!(id: params[:id])
   rescue ActiveRecord::RecordNotFound => e
     redirect_back(fallback_location: root_path, danger: e.message)
   end
