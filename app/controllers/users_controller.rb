@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :user_should_have_logged_in, only: %i(index edit update destroy)
-  before_action :set_micropost, only: %i(edit update)
+  before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
   before_action :set_user, only: %i(show edit update)
 
