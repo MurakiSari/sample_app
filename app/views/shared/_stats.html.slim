@@ -1,7 +1,7 @@
 - @user ||= current_user
 .stats
   a href = "#{ following_user_path(@user) }"
-    strong id="following" class="stat"
+    strong.stat#following
       = @user.following.count
     | following
   a href="#{ followers_user_path(@user) }"
