@@ -39,3 +39,6 @@ $ rails server
 
 詳しくは、[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
 を参考にしてください。
+
+## 開発環境
+Rails 5.1.6
