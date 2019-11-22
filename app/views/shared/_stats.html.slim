@@ -1,10 +1,10 @@
 - @user ||= current_user
 .stats
-  a href = "#{ following_user_path(@user) }"
-    strong.stat#following
+  = link_to following_user_path(@user) do
+    strong.start#following
       = @user.following.count
     | following
-  a href="#{ followers_user_path(@user) }"
-    strong id="followers" class="stat"
+  = link_to followers_user_path(@user) do
+    strong.stat#followers
       = @user.followers.count
     | followers
